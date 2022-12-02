@@ -6,6 +6,8 @@ A webpage designed to give customers all the information they may need about the
 ## Usage
 Customers can either scroll through the webpage to the informatin they would like to see or click on the navigation bar elements to jump to the section they would like more information on.
 
+![horiseon-webpage](https://user-images.githubusercontent.com/118146045/205375222-aedbcc8a-ca31-4a1e-88cf-ea5c17373f55.png)
+
 ## Links
 
 Click the link below to visit our site!
