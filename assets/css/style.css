@@ -1,30 +1,43 @@
+/* Affects all elements, adjusts their size, and resets padding and margin values */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* Changes the background color of the page */
 body {
     background-color: #d9dcd6;
 }
-
-.header {
+/* 
+Gives the header it's own unique styling by setting the font-family, background color, and color of the text
+also sets the padding between the text displayed and the outside of the page
+ */
+header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+/*
+Changes the h1 display type to inline block so that it doesn't take up the width of the page
+Changes the font size to 48px resulting in bigger text
+*/
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline-block;
     font-size: 48px;
 }
-
-.header h1 .seo {
+/* 
+Changes the color of seo in the h1 element, Horiseon
+*/
+.seo {
     color: #d9dcd6;
 }
-
-.header section {
+/* 
+Targets the section inside of the header element
+Gives it a padding and margin. Makes it float right so that it can be inline with the h1
+*/
+header section {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,24 +45,35 @@ body {
     font-size: 20px;
 }
 
-.header section ul {
+/* Removes the bullet style from the list elements */
+ul {
     list-style-type: none;
 }
-
-.header section ul li {
+/* Targets all list elements to display inline and creats a margin to the left to create space inbetween */
+li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* 
+Targets all link elemnts
+changes text color to white
+removes the default underline from the link
+ */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/*
+Targets all paragraph elemnts and changes the text size to 16px
+*/
 p {
     font-size: 16px;
 }
 
+/*
+
+*/
 .hero {
     height: 800px;
     width: 100%;
@@ -86,55 +110,23 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+.benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+.card {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,47 +135,11 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+.card img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
+.card h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
