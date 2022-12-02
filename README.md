@@ -10,5 +10,5 @@ Customers can either scroll through the webpage to the informatin they would lik
 
 ## Links
 
-Click the link below to visit our site!
+Click the link below to visit our site!\
 [Horiseon.com](https://alexoserna.github.io/horiseon-code-refactor/)
