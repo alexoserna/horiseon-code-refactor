@@ -1,8 +1,9 @@
-/* Affects all elements, adjusts their size, and resets padding and margin values */
+/* Affects all elements, adjusts their size, color, and resets padding and margin values */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color:#ffffff;
 }
 /* Changes the background color of the page */
 body {
@@ -15,7 +16,6 @@ also sets the padding between the text displayed and the outside of the page
 header {
     padding: 20px;
     background-color: #2a607c;
-    color: #ffffff;
 }
 
 /*
@@ -56,11 +56,9 @@ li {
 }
 /* 
 Targets all link elemnts
-changes text color to white
 removes the default underline from the link
  */
 a {
-    color: #ffffff;
     text-decoration: none;
 }
 
@@ -72,7 +70,7 @@ p {
 }
 
 /*
-
+    Creates and fills the hero class section with an image that fills the top of the page
 */
 .hero {
     height: 800px;
@@ -82,23 +80,58 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+/*
+Gives an html element with this class a left float value and margin to the right of 25 px
+*/
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/*
+Gives an html element with this class a right float value and margin to the left of 25 px
+*/
 .float-right {
     float: right;
     margin-left: 25px;
 }
-
+/*
+Targets the main section on the page with the 3 card elements and sets the width so it doesn't fill the 
+page. Sets display to inline block so that the benefits container can be next to it
+*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
+/*
+Gives each card margin, padding,height, font-family, color, and background color attributes so they are
+consistent across the board. the padding values allows there to be spaces between each individual card
+aswell as other content on the page.
+*/
+.card {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+}
+/*
+Targets all img elements within the card class
+Sets a unifrom height of 200px
+*/
+.card img {
+    max-height: 200px;
+}
+/*
+Targets all h2 elements, they are only found within the card class
+*/
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/*
 
+*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -109,41 +142,30 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
+/*
 
+*/
 .benefit {
     margin-bottom: 32px;
-    color: #ffffff;
 }
+/*
 
-.benefit h3 {
+*/
+h3 {
     margin-bottom: 10px;
     text-align: center;
 }
+/*
 
+*/
 .benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
+/*
 
-.card {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.card img {
-    max-height: 200px;
-}
-
-.card h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+*/
 footer {
     padding: 30px;
     clear: both;
@@ -151,6 +173,11 @@ footer {
     text-align: center;
 }
 
-footer h2 {
+h4 {
     font-size: 20px;
+    color: black;
+}
+
+footer p{
+    color:black;
 }
